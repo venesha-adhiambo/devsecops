@@ -18,6 +18,6 @@ jobs:
     - name: Install Bandit
       run: pip install bandit
     - name: Run bandit
-      run: bandit -ll -ii -r .
+      run: bandit -ll -ii -r . -f json -o bandit-report.json
 
  
